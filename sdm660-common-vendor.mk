@@ -31,6 +31,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sdm660-common/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/xiaomi/sdm660-common/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
     vendor/xiaomi/sdm660-common/proprietary/lib/extractors/libmmparser.so:system/lib/extractors/libmmparser.so \
+    vendor/xiaomi/sdm660-common/proprietary/lib/libdiag_system.so:system/lib/libdiag_system.so \
     vendor/xiaomi/sdm660-common/proprietary/lib/libFileMux.so:system/lib/libFileMux.so \
     vendor/xiaomi/sdm660-common/proprietary/lib/libOmxMux.so:system/lib/libOmxMux.so \
     vendor/xiaomi/sdm660-common/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
@@ -62,6 +63,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sdm660-common/proprietary/lib/vendor.qti.hardware.perf@1.0.so:system/lib/vendor.qti.hardware.perf@1.0.so \
     vendor/xiaomi/sdm660-common/proprietary/lib64/com.qualcomm.qti.ant@1.0.so:system/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/xiaomi/sdm660-common/proprietary/lib64/extractors/libmmparser.so:system/lib64/extractors/libmmparser.so \
+    vendor/xiaomi/sdm660-common/proprietary/lib64/libdiag_system.so:system/lib64/libdiag_system.so \
     vendor/xiaomi/sdm660-common/proprietary/lib64/libFileMux.so:system/lib64/libFileMux.so \
     vendor/xiaomi/sdm660-common/proprietary/lib64/libOmxMux.so:system/lib64/libOmxMux.so \
     vendor/xiaomi/sdm660-common/proprietary/lib64/liblocationservice_jni.so:system/lib64/liblocationservice_jni.so \
