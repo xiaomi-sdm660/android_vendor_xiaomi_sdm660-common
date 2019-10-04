@@ -37,17 +37,17 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libgpustats",
+	name: "libtime_genoff",
 	owner: "xiaomi",
 	strip: {
 		none:true,
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/libgpustats.so"],
+			srcs: ["proprietary/vendor/lib/libtime_genoff.so"],
 		},
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libgpustats.so"],
+			srcs: ["proprietary/vendor/lib64/libtime_genoff.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -174,18 +174,6 @@ android_app_import {
 	},
 	privileged: true,
 	product_specific: true,
-}
-
-dex_import {
-	name: "QPerformance",
-	owner: "xiaomi",
-	jars: ["proprietary/framework/QPerformance.jar"],
-}
-
-dex_import {
-	name: "UxPerformance",
-	owner: "xiaomi",
-	jars: ["proprietary/framework/UxPerformance.jar"],
 }
 
 dex_import {
