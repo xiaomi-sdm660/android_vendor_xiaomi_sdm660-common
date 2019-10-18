@@ -23,7 +23,7 @@ cc_prebuilt_library_shared {
 	name: "libantradio",
 	owner: "xiaomi",
 	strip: {
-		none:true,
+		none: true,
 	},
 	target: {
 		android_arm: {
@@ -34,13 +34,14 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "both",
+	prefer: true,
 }
 
 cc_prebuilt_library_shared {
 	name: "libthermalclient",
 	owner: "xiaomi",
 	strip: {
-		none:true,
+		none: true,
 	},
 	target: {
 		android_arm: {
@@ -51,6 +52,7 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "both",
+	prefer: true,
 	soc_specific: true,
 }
 
@@ -58,7 +60,7 @@ cc_prebuilt_library_shared {
 	name: "libtime_genoff",
 	owner: "xiaomi",
 	strip: {
-		none:true,
+		none: true,
 	},
 	target: {
 		android_arm: {
@@ -69,6 +71,7 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "both",
+	prefer: true,
 	soc_specific: true,
 }
 
@@ -177,3 +180,4 @@ dex_import {
 	owner: "xiaomi",
 	jars: ["proprietary/framework/WfdCommon.jar"],
 }
+
