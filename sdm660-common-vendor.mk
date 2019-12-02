@@ -634,8 +634,6 @@ PRODUCT_PACKAGES += \
     libthermalclient \
     libtime_genoff \
     SoterService \
-    HotwordEnrollmentOKGoogleWCD9340 \
-    HotwordEnrollmentXGoogleWCD9340 \
     WfdService \
     CneApp \
     IWlanService \
