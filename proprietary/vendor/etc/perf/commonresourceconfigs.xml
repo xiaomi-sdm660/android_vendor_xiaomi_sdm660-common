@@ -35,7 +35,7 @@ need to be added just before the end of it's major group. -->
     <Major OpcodeValue="0x1" />
         <Minor OpcodeValue="0x0" Node="/dev/cpu_dma_latency" />
         <Minor OpcodeValue="0x1" Node="/sys/module/lpm_levels/system/perf/perf-l2-pc/idle_enabled" />
-        <Minor OpcodeValue="0x2" Node="/sys/module/lpm_levels/parameters/bias_hyst" />
+        <Minor OpcodeValue="0x2" Node="/proc/sys/kernel/sched_busy_hyst_ns" />
         <Minor OpcodeValue="0x3" Node="/sys/module/lpm_levels/parameters/ref_stddev" />
         <Minor OpcodeValue="0x4" Node="/sys/module/lpm_levels/parameters/tmr_add" />
     <!-- power collapse major end -->
@@ -89,6 +89,9 @@ need to be added just before the end of it's major group. -->
         <Minor OpcodeValue="0x21" Node="/proc/sys/kernel/sched_user_hint" /> <!--sched_user_hint -->
         <Minor OpcodeValue="0x22" Node="/proc/sys/kernel/sched_task_unfilter_nr_windows" /> <!--sched_task_unfilter_nr_windows -->
         <Minor OpcodeValue="0x23" Node="/proc/sys/kernel/sched_coloc_downmigrate_ns" /> <!--sched_coloc_downmigrate_ns  -->
+        <Minor OpcodeValue="0x24" Node="/proc/sys/kernel/sched_coloc_busy_hysteresis_enable_cpus" />
+        <Minor OpcodeValue="0x25" Node="/proc/sys/kernel/sched_coloc_busy_hyst_ns" />
+        <Minor OpcodeValue="0x26" Node="/proc/sys/kernel/sched_window_stats_policy" />
     <!-- sched major end -->
 
     <!-- core hotplug major start -->
