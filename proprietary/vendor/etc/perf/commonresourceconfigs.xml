@@ -38,6 +38,7 @@ need to be added just before the end of it's major group. -->
         <Minor OpcodeValue="0x2" Node="/sys/module/lpm_levels/parameters/bias_hyst" />
         <Minor OpcodeValue="0x3" Node="/sys/module/lpm_levels/parameters/ref_stddev" />
         <Minor OpcodeValue="0x4" Node="/sys/module/lpm_levels/parameters/tmr_add" />
+        <Minor OpcodeValue="0x5" Node="/sys/module/lpm_levels/parameters/lpm_ipi_prediction" Supported="no" />
     <!-- power collapse major end -->
 
     <!-- cpufreq major start -->
