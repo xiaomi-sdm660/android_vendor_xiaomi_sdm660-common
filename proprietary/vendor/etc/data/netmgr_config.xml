@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
      Netmgr Module configuration XML file
-     Copyright (c) 2013, 2016-2019 Qualcomm Technologies, Inc.
+     Copyright (c) 2013, 2016-2020 Qualcomm Technologies, Inc.
      All Rights Reserved.
      Confidential and Proprietary - Qualcomm Technologies, Inc.
 -->
@@ -2372,7 +2372,7 @@
       <data name="use_qmuxd" type="int"> 0 </data>
       <data name="dpm_retry_timeout" type="int"> 10000 </data>
       <data name="wda_data_format_enabled" type="int"> 1 </data>
-      <data name="kfc_mode" type="int"> 3 </data>
+      <data name="kfc_mode" type="int"> 4 </data>
       <data name="qmi_pc" type="int"> 1 </data>
       <data name="tcp_ack_prio" type="int"> 1 </data>
 
@@ -2570,7 +2570,7 @@
       <data name="use_qmuxd" type="int"> 0 </data>
       <data name="dpm_retry_timeout" type="int"> 10000 </data>
       <data name="wda_data_format_enabled" type="int"> 1 </data>
-      <data name="kfc_mode" type="int"> 3 </data>
+      <data name="kfc_mode" type="int"> 4 </data>
       <data name="qmi_pc" type="int"> 1 </data>
       <data name="tcp_ack_prio" type="int"> 1 </data>
 
@@ -2678,7 +2678,7 @@
       <data name="use_qmuxd" type="int"> 0 </data>
       <data name="dpm_retry_timeout" type="int"> 10000 </data>
       <data name="wda_data_format_enabled" type="int"> 1 </data>
-      <data name="kfc_mode" type="int"> 3 </data>
+      <data name="kfc_mode" type="int"> 4 </data>
       <data name="kfc_qmap" type="int"> 1 </data>
       <data name="qmi_pc" type="int"> 1 </data>
       <data name="tcp_ack_prio" type="int"> 1 </data>
@@ -2821,7 +2821,7 @@
       <data name="use_qmuxd" type="int"> 0 </data>
       <data name="dpm_retry_timeout" type="int"> 10000 </data>
       <data name="wda_data_format_enabled" type="int"> 1 </data>
-      <data name="kfc_mode" type="int"> 3 </data>
+      <data name="kfc_mode" type="int"> 4 </data>
       <data name="kfc_qmap" type="int"> 1 </data>
       <data name="qmi_pc" type="int"> 1 </data>
       <data name="tcp_ack_prio" type="int"> 1 </data>
@@ -2837,7 +2837,7 @@
       <data name="dataformat_agg_dl_size" type="int"> 31668 </data>
       <data name="dataformat_agg_ul_pkt" type="int"> 32 </data>
       <data name="dataformat_agg_ul_size" type="int"> 16384 </data>
-      <data name="dataformat_agg_ul_time" type="int"> 3000000 </data>
+      <data name="dataformat_agg_ul_time" type="int"> 1000000 </data>
       <data name="dataformat_agg_ul_features" type="int"> 1 </data>
       <data name="dataformat_dl_data_aggregation_protocol" type="int"> 9 </data>
       <data name="dataformat_ul_data_aggregation_protocol" type="int"> 9 </data>
@@ -2964,7 +2964,7 @@
       <data name="use_qmuxd" type="int"> 0 </data>
       <data name="dpm_retry_timeout" type="int"> 10000 </data>
       <data name="wda_data_format_enabled" type="int"> 1 </data>
-      <data name="kfc_mode" type="int"> 3 </data>
+      <data name="kfc_mode" type="int"> 4 </data>
       <data name="qmi_pc" type="int"> 1 </data>
       <data name="tcp_ack_prio" type="int"> 1 </data>
 
@@ -3008,63 +3008,93 @@
          <data type="int"> 0 </data> <!-- MODEM_MDM -->
       </list>
 
-      <data name="control_ports_len" type="int"> 11 </data>
-      <list name="control_ports">
-         <data type="string"> rmnet_data0 </data>
-         <data type="string"> rmnet_data1 </data>
-         <data type="string"> rmnet_data2 </data>
-         <data type="string"> rmnet_data3 </data>
-         <data type="string"> rmnet_data4 </data>
-         <data type="string"> rmnet_data5 </data>
-         <data type="string"> rmnet_data6 </data>
-         <data type="string"> rmnet_data7 </data>
-         <data type="string"> rmnet_data8 </data>
-         <data type="string"> rmnet_data9 </data>
-         <data type="string"> rmnet_data10 </data>
-      </list>
+     <data name="control_ports_len" type="int"> 17 </data>
+     <list name="control_ports">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+       <data type="string"> rmnet_data8 </data>
+       <data type="string"> rmnet_data9 </data>
+       <data type="string"> rmnet_data10 </data>
+       <data type="string"> rmnet_data11 </data>
+       <data type="string"> rmnet_data12 </data>
+       <data type="string"> rmnet_data13 </data>
+       <data type="string"> rmnet_data14 </data>
+       <data type="string"> rmnet_data15 </data>
+       <data type="string"> rmnet_data16 </data>
+     </list>
 
-      <data name="data_ports_len" type="int"> 11 </data>
-      <list name="data_ports">
-         <data type="string"> rmnet_data0 </data>
-         <data type="string"> rmnet_data1 </data>
-         <data type="string"> rmnet_data2 </data>
-         <data type="string"> rmnet_data3 </data>
-         <data type="string"> rmnet_data4 </data>
-         <data type="string"> rmnet_data5 </data>
-         <data type="string"> rmnet_data6 </data>
-         <data type="string"> rmnet_data7 </data>
-         <data type="string"> rmnet_data8 </data>
-         <data type="string"> rmnet_data9 </data>
-         <data type="string"> rmnet_data10 </data>
-      </list>
+     <data name="data_ports_len" type="int"> 17 </data>
+     <list name="data_ports">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+       <data type="string"> rmnet_data8 </data>
+       <data type="string"> rmnet_data9 </data>
+       <data type="string"> rmnet_data10 </data>
+       <data type="string"> rmnet_data11 </data>
+       <data type="string"> rmnet_data12 </data>
+       <data type="string"> rmnet_data13 </data>
+       <data type="string"> rmnet_data14 </data>
+       <data type="string"> rmnet_data15 </data>
+       <data type="string"> rmnet_data16 </data>
+     </list>
+     <!-- Number of above data ports inited on bootup -->
+     <data name="static_fwd_links" type="int"> 6 </data>
 
-      <!-- iWLAN ports -->
-      <data name="iwlan_enable" type="int"> 1 </data>
-      <data name="rev_control_ports_len" type="int"> 9 </data>
-      <list name="rev_control_ports">
-         <data type="string"> r_rmnet_data0 </data>
-         <data type="string"> r_rmnet_data1 </data>
-         <data type="string"> r_rmnet_data2 </data>
-         <data type="string"> r_rmnet_data3 </data>
-         <data type="string"> r_rmnet_data4 </data>
-         <data type="string"> r_rmnet_data5 </data>
-         <data type="string"> r_rmnet_data6 </data>
-         <data type="string"> r_rmnet_data7 </data>
-         <data type="string"> r_rmnet_data8 </data>
-      </list>
+     <!-- iWLAN ports -->
+     <data name="iwlan_enable" type="int"> 1 </data>
+     <data name="rev_control_ports_len" type="int"> 16 </data>
+     <list name="rev_control_ports">
+       <data type="string"> r_rmnet_data0 </data>
+       <data type="string"> r_rmnet_data1 </data>
+       <data type="string"> r_rmnet_data2 </data>
+       <data type="string"> r_rmnet_data3 </data>
+       <data type="string"> r_rmnet_data4 </data>
+       <data type="string"> r_rmnet_data5 </data>
+       <data type="string"> r_rmnet_data6 </data>
+       <data type="string"> r_rmnet_data7 </data>
+       <data type="string"> r_rmnet_data8 </data>
+       <data type="string"> r_rmnet_data9 </data>
+       <data type="string"> r_rmnet_data10 </data>
+       <data type="string"> r_rmnet_data11 </data>
+       <data type="string"> r_rmnet_data12 </data>
+       <data type="string"> r_rmnet_data13 </data>
+       <data type="string"> r_rmnet_data14 </data>
+       <data type="string"> r_rmnet_data15 </data>
+     </list>
 
-      <data name="rev_data_ports_len" type="int"> 9 </data>
-      <list name="rev_data_ports">
-        <data type="string"> r_rmnet_data0 </data>
-        <data type="string"> r_rmnet_data1 </data>
-        <data type="string"> r_rmnet_data2 </data>
-        <data type="string"> r_rmnet_data3 </data>
-        <data type="string"> r_rmnet_data4 </data>
-        <data type="string"> r_rmnet_data5 </data>
-        <data type="string"> r_rmnet_data6 </data>
-        <data type="string"> r_rmnet_data7 </data>
-        <data type="string"> r_rmnet_data8 </data>
-      </list>
+     <data name="rev_data_ports_len" type="int"> 16 </data>
+     <list name="rev_data_ports">
+       <data type="string"> r_rmnet_data0 </data>
+       <data type="string"> r_rmnet_data1 </data>
+       <data type="string"> r_rmnet_data2 </data>
+       <data type="string"> r_rmnet_data3 </data>
+       <data type="string"> r_rmnet_data4 </data>
+       <data type="string"> r_rmnet_data5 </data>
+       <data type="string"> r_rmnet_data6 </data>
+       <data type="string"> r_rmnet_data7 </data>
+       <data type="string"> r_rmnet_data8 </data>
+       <data type="string"> r_rmnet_data9 </data>
+       <data type="string"> r_rmnet_data10 </data>
+       <data type="string"> r_rmnet_data11 </data>
+       <data type="string"> r_rmnet_data12 </data>
+       <data type="string"> r_rmnet_data13 </data>
+       <data type="string"> r_rmnet_data14 </data>
+       <data type="string"> r_rmnet_data15 </data>
+     </list>
+     <!-- Number of above reverse data ports inited on bootup -->
+     <data name="static_rev_links" type="int"> 4 </data>
    </listitem>
 
 </list>
