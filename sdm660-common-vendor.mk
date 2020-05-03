@@ -26,6 +26,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sdm660-common/proprietary/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/audiosphere.xml \
     vendor/xiaomi/sdm660-common/proprietary/etc/permissions/com.qti.location.sdk.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qti.location.sdk.xml \
     vendor/xiaomi/sdm660-common/proprietary/etc/permissions/com.qualcomm.location.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qualcomm.location.xml \
+    vendor/xiaomi/sdm660-common/proprietary/etc/permissions/com.qualcomm.qti.imscmservice.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qualcomm.qti.imscmservice.xml \
     vendor/xiaomi/sdm660-common/proprietary/etc/permissions/izat.xt.srv.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/izat.xt.srv.xml \
     vendor/xiaomi/sdm660-common/proprietary/etc/permissions/privapp-permissions-com.qualcomm.location.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.qualcomm.location.xml \
     vendor/xiaomi/sdm660-common/proprietary/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qti_permissions.xml \
@@ -71,17 +72,32 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sdm660-common/proprietary/product/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/dpm/dpm.conf \
     vendor/xiaomi/sdm660-common/proprietary/product/etc/init/dpmd.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/dpmd.rc \
     vendor/xiaomi/sdm660-common/proprietary/product/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qti.dpmframework.xml \
+    vendor/xiaomi/sdm660-common/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml \
+    vendor/xiaomi/sdm660-common/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml \
+    vendor/xiaomi/sdm660-common/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml \
     vendor/xiaomi/sdm660-common/proprietary/product/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/dpmapi.xml \
     vendor/xiaomi/sdm660-common/proprietary/product/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/qcrilhook.xml \
     vendor/xiaomi/sdm660-common/proprietary/product/etc/permissions/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml \
     vendor/xiaomi/sdm660-common/proprietary/product/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephonyservice.xml \
     vendor/xiaomi/sdm660-common/proprietary/product/framework/QtiTelephonyServicelibrary.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/QtiTelephonyServicelibrary.jar \
     vendor/xiaomi/sdm660-common/proprietary/product/framework/com.qti.dpmframework.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qti.dpmframework.jar \
+    vendor/xiaomi/sdm660-common/proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar \
+    vendor/xiaomi/sdm660-common/proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar \
+    vendor/xiaomi/sdm660-common/proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar \
+    vendor/xiaomi/sdm660-common/proprietary/product/framework/com.qualcomm.qti.uceservice-V2.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qualcomm.qti.uceservice-V2.0-java.jar \
+    vendor/xiaomi/sdm660-common/proprietary/product/framework/com.qualcomm.qti.uceservice-V2.1-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qualcomm.qti.uceservice-V2.1-java.jar \
     vendor/xiaomi/sdm660-common/proprietary/product/framework/dpmapi.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/dpmapi.jar \
     vendor/xiaomi/sdm660-common/proprietary/product/framework/qcrilhook.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/qcrilhook.jar \
     vendor/xiaomi/sdm660-common/proprietary/product/framework/qti-telephony-common.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/qti-telephony-common.jar \
+    vendor/xiaomi/sdm660-common/proprietary/product/framework/vendor.qti.ims.callinfo-V1.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.ims.callinfo-V1.0-java.jar \
+    vendor/xiaomi/sdm660-common/proprietary/product/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar \
+    vendor/xiaomi/sdm660-common/proprietary/product/lib/libdiag_system.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libdiag_system.so \
     vendor/xiaomi/sdm660-common/proprietary/product/lib/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.data.factory@2.1.so \
     vendor/xiaomi/sdm660-common/proprietary/product/lib/vendor.qti.data.slm@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.data.slm@1.0.so \
+    vendor/xiaomi/sdm660-common/proprietary/product/lib/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so \
+    vendor/xiaomi/sdm660-common/proprietary/product/lib/vendor.qti.ims.rcsconfig@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.ims.rcsconfig@1.1.so \
+    vendor/xiaomi/sdm660-common/proprietary/product/lib/vendor.qti.imsrtpservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.imsrtpservice@2.0.so \
+    vendor/xiaomi/sdm660-common/proprietary/product/lib/vendor.qti.imsrtpservice@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.imsrtpservice@2.1.so \
     vendor/xiaomi/sdm660-common/proprietary/product/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/xiaomi/sdm660-common/proprietary/product/lib64/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/xiaomi/sdm660-common/proprietary/product/lib64/lib-imscamera.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imscamera.so \
@@ -106,6 +122,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sdm660-common/proprietary/product/lib64/vendor.qti.gnss@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.gnss@2.0.so \
     vendor/xiaomi/sdm660-common/proprietary/product/lib64/vendor.qti.gnss@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.gnss@2.1.so \
     vendor/xiaomi/sdm660-common/proprietary/product/lib64/vendor.qti.gnss@3.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.gnss@3.0.so \
+    vendor/xiaomi/sdm660-common/proprietary/product/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so \
+    vendor/xiaomi/sdm660-common/proprietary/product/lib64/vendor.qti.ims.rcsconfig@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.ims.rcsconfig@1.1.so \
     vendor/xiaomi/sdm660-common/proprietary/product/lib64/vendor.qti.imsrtpservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.imsrtpservice@2.0.so \
     vendor/xiaomi/sdm660-common/proprietary/product/lib64/vendor.qti.imsrtpservice@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.imsrtpservice@2.1.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
@@ -243,6 +261,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.fm@1.0-impl.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib/hw/vulkan.sdm660.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.sdm660.so \
+    vendor/xiaomi/sdm660-common/proprietary/vendor/lib/lib-imsvtcore.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsvtcore.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib/libAlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAlacSwDec.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib/libApeSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libApeSwDec.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib/libC2D2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libC2D2.so \
@@ -305,7 +324,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib/libmmcamera_trueportrait_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_trueportrait_lib.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib/libmmcamera_ubifocus_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ubifocus_lib.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib/libmmosal_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmosal_proprietary.so \
-    vendor/xiaomi/sdm660-common/proprietary/vendor/lib/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcrypto.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib/liboptizoom.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboptizoom.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib/libperfconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfconfig.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfgluelayer.so \
@@ -380,11 +398,30 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.fm@1.0.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.perf@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.perf@2.0.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.qdutils_disp@1.0.so \
+    vendor/xiaomi/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.radio.atcmdfwd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.atcmdfwd@1.0.so \
+    vendor/xiaomi/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.ims@1.5.so \
+    vendor/xiaomi/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.6.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.ims@1.6.so \
+    vendor/xiaomi/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so \
+    vendor/xiaomi/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.radio.lpa@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.lpa@1.0.so \
+    vendor/xiaomi/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.radio.qcrilhook@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.qcrilhook@1.0.so \
+    vendor/xiaomi/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.radio.qtiradio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.qtiradio@1.0.so \
+    vendor/xiaomi/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.radio.qtiradio@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.qtiradio@2.0.so \
+    vendor/xiaomi/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.radio.uim@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.uim@1.0.so \
+    vendor/xiaomi/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.radio.uim@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.uim@1.1.so \
+    vendor/xiaomi/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.radio.uim@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.uim@1.2.so \
+    vendor/xiaomi/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.uim_remote_client@1.0.so \
+    vendor/xiaomi/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.uim_remote_client@1.1.so \
+    vendor/xiaomi/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.radio.uim_remote_server@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.uim_remote_server@1.0.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.sensorscalibrate@1.0.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.slmadapter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.slmadapter@1.0.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.tui_comm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.tui_comm@1.0.so \
+    vendor/xiaomi/sdm660-common/proprietary/vendor/lib/vendor.qti.ims.rcsconfig@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.rcsconfig@1.1.so \
+    vendor/xiaomi/sdm660-common/proprietary/vendor/lib/vendor.qti.imsrtpservice@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.imsrtpservice@2.0.so \
+    vendor/xiaomi/sdm660-common/proprietary/vendor/lib/vendor.qti.imsrtpservice@2.1-service-Impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.imsrtpservice@2.1-service-Impl.so \
+    vendor/xiaomi/sdm660-common/proprietary/vendor/lib/vendor.qti.imsrtpservice@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.imsrtpservice@2.1.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.dpm.api@1.0.so \
+    vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@2.0.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@2.1.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@2.2.so \
@@ -462,8 +499,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/libcneqmiutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneqmiutils.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libconfigdb.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/libcpion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcpion.so \
-    vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/libcppf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcppf.so \
-    vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/libcpion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcpion.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/libdataitems.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdataitems.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiag.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisp-aba.so \
@@ -478,8 +513,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/libgdtap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgdtap.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgsl.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/libhdcpsrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcpsrm.so \
-    vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/libhdcp1prov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcp1prov.so \
-    vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/libhdcp2p2prov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcp2p2prov.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_tm.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libidl.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_client_api.so \
@@ -507,7 +540,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/libnetmgr_nr_fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr_nr_fusion.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/libnetmgr_rmnet_ext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr_rmnet_ext.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/libnlnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnlnetmgr.so \
-    vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboemcrypto.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdmapper.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/libpdnotifier.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdnotifier.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/libperfconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfconfig.so \
@@ -537,6 +569,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/librcc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librcc.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/libril-qc-hal-qmi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-hal-qmi.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/libril-qc-ltedirectdisc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-ltedirectdisc.so \
+    vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/libril-qc-qmi-1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-qmi-1.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/libril-qc-radioconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-radioconfig.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/libril-qcril-hook-oem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qcril-hook-oem.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/librilqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librilqmiservices.so \
@@ -638,7 +671,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.latency@2.0.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.mlipay@1.0.so \
     vendor/xiaomi/sdm660-common/proprietary/vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.mlipay@1.1.so \
-    vendor/xiaomi/sdm660-common/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db
+    vendor/xiaomi/sdm660-common/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db \
+    vendor/xiaomi/sdm660-common/proprietary/vendor/radio/qcril_database/upgrade/0_initial.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/0_initial.sql \
+    vendor/xiaomi/sdm660-common/proprietary/vendor/radio/qcril_database/upgrade/1_version_intro.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/1_version_intro.sql \
+    vendor/xiaomi/sdm660-common/proprietary/vendor/radio/qcril_database/upgrade/2_version_add_wps_config.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/2_version_add_wps_config.sql \
+    vendor/xiaomi/sdm660-common/proprietary/vendor/radio/qcril_database/upgrade/3_version_update_wps_config.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/3_version_update_wps_config.sql
 
 PRODUCT_PACKAGES += \
     libantradio \
