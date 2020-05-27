@@ -83,8 +83,12 @@
 
         <!-- Type="3", FA launch boost of 15sec -->
         <Config
-            Id="0x00001081" Type="3" Enable="true" Timeout="15000" Target="sdm660"
+            Id="0x00001081" Type="3" Enable="true" Timeout="15000" Target="sdm660" Kernel="4.4"
             Resources="0x40C5C000, 50, 0x40C58000, 95, 0x40C54000, 100" />
+
+        <Config
+            Id="0x00001081" Type="3" Enable="true" Timeout="15000" Target="sdm660" Kernel="4.14"
+            Resources="0x40C58000, 95, 0x40C54000, 100" />
 
         <Config
             Id="0x00001081" Type="3" Enable="true" Timeout="15000" Target="sdm658"
@@ -114,12 +118,12 @@
 
         <!-- Type="1", Vertical Scroll boost -->
         <Config
-            Id="0x00001080" Type="1" Enable="true" Target="sdm660" Resolution="1080p"
+            Id="0x00001080" Type="1" Enable="true" Target="sdm660" Resolution="1080p" Kernel="4.4"
             Resources="0x41800000, 0x31, 0x40800000, 1100, 0x40800100, 1100, 0x40C00000, 2,
                        0x41400000, 1, 0x41418000, 1, 0x40C5C000, 40"  />
 
         <Config
-            Id="0x00001080" Type="1" Enable="true" Target="sdm660" Resolution="2560"
+            Id="0x00001080" Type="1" Enable="true" Target="sdm660" Resolution="2560" Kernel="4.4"
             Resources="0x41800000, 0x31, 0x40800000, 1100, 0x40800100, 1100, 0x40C00000, 2,
                        0x41400000, 1, 0x41418000, 1, 0x40C5C000, 40, 0x4280C000, 266"  />
 
@@ -132,6 +136,23 @@
             Id="0x00001080" Type="1" Enable="true" Target="sdm658" Resolution="2560"
             Resources="0x41800000, 0x31, 0x40800000, 1100, 0x40800100, 1100, 0x40C00000, 2,
                        0x41400000, 1, 0x41418000, 1, 0x40C5C000, 40, 0x4280C000, 266"  />
+
+    <!--sdm660,K4.14 Vertical Scroll boost-->
+        <!-- CPUBW_MIN_FREQ resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value -->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- GPU MIN-FREQUENCY resource opcode,value-->
+
+        <!-- Type="1", Vertical Scroll boost -->
+
+        <Config
+            Id="0x00001080" Type="1" Enable="true" Target="sdm660" Resolution="1080p" Kernel="4.14"
+            Resources="0x41800000, 0x31, 0x40800000, 1100, 0x40800100, 1100, 0x40C00000, 2"  />
+
+        <Config
+            Id="0x00001080" Type="1" Enable="true" Target="sdm660" Resolution="2560" Kernel="4.14"
+            Resources="0x41800000, 0x31, 0x40800000, 1100, 0x40800100, 1100, 0x40C00000, 2, 0x4280C000, 266"  />
 
     <!--sdm630,sdm455 Vertical Scroll boost-->
         <!-- CPUBW_MIN_FREQ resource opcode, value-->
@@ -162,11 +183,11 @@
 
         <!-- Type="2", Horizontal Scroll boost -->
         <Config
-            Id="0x00001080" Type="2" Enable="true" Target="sdm660" Resolution="1080p"
+            Id="0x00001080" Type="2" Enable="true" Target="sdm660" Resolution="1080p" Kernel="4.4"
             Resources="0x41800000, 0x31, 0x40800000, 1100, 0x40800100, 1100, 0x40C00000, 2,
                        0x41400000, 1, 0x41418000, 1, 0x40C5C000, 40"  />
         <Config
-            Id="0x00001080" Type="2" Enable="true" Target="sdm660" Resolution="2560"
+            Id="0x00001080" Type="2" Enable="true" Target="sdm660" Resolution="2560" Kernel="4.4"
             Resources="0x41800000, 0x31, 0x40800000, 1100, 0x40800100, 1100, 0x40C00000, 2,
                        0x41400000, 1, 0x41418000, 1, 0x40C5C000, 40, 0x4280C000, 266"  />
 
@@ -178,6 +199,23 @@
             Id="0x00001080" Type="2" Enable="true" Target="sdm658" Resolution="2560"
             Resources="0x41800000, 0x31, 0x40800000, 1100, 0x40800100, 1100, 0x40C00000, 2,
                        0x41400000, 1, 0x41418000, 1, 0x40C5C000, 40, 0x4280C000, 266"  />
+
+    <!--sdm660,K4.14 Horizontal Scroll boost-->
+        <!-- CPUBW_MIN_FREQ resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value -->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- GPU MIN-FREQUENCY resource opcode,value-->
+
+        <!-- Type="2", Horizontal Scroll boost -->
+
+        <Config
+            Id="0x00001080" Type="2" Enable="true" Target="sdm660" Resolution="1080p" Kernel="4.14"
+            Resources="0x41800000, 0x31, 0x40800000, 1100, 0x40800100, 1100, 0x40C00000, 2"  />
+
+        <Config
+            Id="0x00001080" Type="2" Enable="true" Target="sdm660" Resolution="2560" Kernel="4.14"
+            Resources="0x41800000, 0x31, 0x40800000, 1100, 0x40800100, 1100, 0x40C00000, 2, 0x4280C000, 266"  />
 
     <!--sdm630,sdm455 Horizontal Scroll boost-->
         <!-- CPUBW_MIN_FREQ resource opcode, value-->
@@ -208,12 +246,12 @@
 
         <!-- Type="4", Pre-Fling boost -->
         <Config
-            Id="0x00001080" Type="4" Enable="true" Timeout="80" Target="sdm660" Resolution="1080p"
+            Id="0x00001080" Type="4" Enable="true" Timeout="80" Target="sdm660" Resolution="1080p" Kernel="4.4"
             Resources="0x41800000, 0x31, 0x40800000, 1100, 0x40800100, 1100, 0x40C00000, 2,
                        0x41400000, 1, 0x41418000, 1, 0x40C5C000, 40"  />
 
         <Config
-            Id="0x00001080" Type="4" Enable="true" Timeout="80" Target="sdm660" Resolution="2560"
+            Id="0x00001080" Type="4" Enable="true" Timeout="80" Target="sdm660" Resolution="2560" Kernel="4.4"
             Resources="0x41800000, 0x31, 0x40800000, 1100, 0x40800100, 1100, 0x40C00000, 2,
                        0x41400000, 1, 0x41418000, 1, 0x40C5C000, 40, 0x4280C000, 266"  />
 
@@ -236,6 +274,23 @@
             Id="0x00001080" Type="4" Enable="true" Timeout="80" Target="sdm455"
             Resources="0x41800000, 0x31, 0x40800000, 1100, 0x40800100, 1100, 0x40C00000, 2,
                        0x41400000, 1, 0x41418000, 1, 0x40C5C000, 40"  />
+
+    <!--sdm660,K4.14 Pre-Fling boost-->
+        <!-- CPUBW_MIN_FREQ resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value -->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- GPU MIN-FREQUENCY resource opcode,value-->
+
+        <!-- Type="4", Pre-Fling boost -->
+
+        <Config
+            Id="0x00001080" Type="4" Enable="true" Timeout="80" Target="sdm660" Resolution="1080p" Kernel="4.14"
+            Resources="0x41800000, 0x31, 0x40800000, 1100, 0x40800100, 1100, 0x40C00000, 2"  />
+
+        <Config
+            Id="0x00001080" Type="4" Enable="true" Timeout="80" Target="sdm660" Resolution="2560" Kernel="4.14"
+            Resources="0x41800000, 0x31, 0x40800000, 1100, 0x40800100, 1100, 0x40C00000, 2, 0x4280C000, 266"  />
 
     <!--MTP boost-->
         <!-- SCHEDBOOST resource opcode, value-->
