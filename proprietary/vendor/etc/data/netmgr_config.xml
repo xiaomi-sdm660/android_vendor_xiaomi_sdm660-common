@@ -2852,7 +2852,7 @@
       <data name="rmnet_perf" type="int"> 3 </data>
       <data name="rmnet_shs" type="int"> 1 </data>
       <data name="uplink_priority" type="int"> 1 </data>
-      <data name="netdev_max_backlog" type="int"> 100000 </data>
+      <data name="netdev_max_backlog" type="int"> 6500 </data>
       <data name="disable_tcp_hystart_detect" type="int"> 1 </data>
       <data name="disable_hystart" type="int"> 1 </data>
       <data name="initial_ssthresh" type="int"> 1400 </data>
@@ -3118,11 +3118,11 @@
       <data name="dynamic_tc_ul_baserate" type="int"> 0 </data>
       <data name="tc_ul_burst" type="int"> 25000 </data>
       <data name="rmnet_data_enabled" type="int"> 1 </data>
-      <data name="dataformat_agg_dl_pkt" type="int"> 1 </data>
-      <data name="dataformat_agg_dl_size" type="int"> 2048 </data>
-      <data name="dataformat_agg_ul_pkt" type="int"> 0 </data>
-      <data name="dataformat_agg_ul_size" type="int"> 0 </data>
-      <data name="dataformat_agg_ul_time" type="int"> 0 </data>
+      <data name="dataformat_agg_dl_pkt" type="int"> 31 </data>
+      <data name="dataformat_agg_dl_size" type="int"> 31668 </data>
+      <data name="dataformat_agg_ul_pkt" type="int"> 32 </data>
+      <data name="dataformat_agg_ul_size" type="int"> 16384 </data>
+      <data name="dataformat_agg_ul_time" type="int"> 1000000 </data>
       <data name="dataformat_agg_ul_features" type="int"> 1 </data>
       <data name="dataformat_dl_data_aggregation_protocol" type="int"> 9 </data>
       <data name="dataformat_ul_data_aggregation_protocol" type="int"> 9 </data>
