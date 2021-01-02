@@ -6,6 +6,6 @@
 
 <permissions>
 
-    <library name="com.qualcomm.qti.imscmservice-V2.2-java" file="/system/product/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar" />
+    <library name="com.qualcomm.qti.imscmservice-V2.2-java" file="/system/system_ext/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar" />
 
 </permissions>

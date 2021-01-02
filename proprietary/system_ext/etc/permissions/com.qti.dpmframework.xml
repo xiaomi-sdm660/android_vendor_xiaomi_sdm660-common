@@ -4,7 +4,7 @@
     Confidential and Proprietary - Qualcomm Technologies, Inc.-->
 <permissions>
     <library name="com.qti.dpmframework"
-        file="/system/product/framework/com.qti.dpmframework.jar"/>
+        file="/system/system_ext/framework/com.qti.dpmframework.jar"/>
     <library name="android.hidl.manager-V1.0-java"
         file="/system/framework/android.hidl.manager-V1.0-java.jar"/>
     <permission name="com.qualcomm.permission.READPROC" >
