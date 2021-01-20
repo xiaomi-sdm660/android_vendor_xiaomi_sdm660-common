@@ -711,6 +711,7 @@ PRODUCT_PACKAGES += \
     libsdm-disp-vndapis \
     libthermalclient \
     libtime_genoff \
+    manifest_android.hardware.drm@1.2-service.widevine \
     PowerOffAlarm \
     qcrilhook \
     qcrilmsgtunnel \

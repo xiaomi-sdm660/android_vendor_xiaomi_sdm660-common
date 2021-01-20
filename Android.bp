@@ -424,6 +424,14 @@ dex_import {
 }
 
 prebuilt_etc_xml {
+	name: "manifest_android.hardware.drm@1.2-service.widevine",
+	owner: "xiaomi",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.2-service.widevine.xml",
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
 	name: "vendor.qti.gnss@3.0-service",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss@3.0-service.xml",
