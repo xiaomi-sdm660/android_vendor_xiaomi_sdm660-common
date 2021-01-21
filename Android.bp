@@ -34,47 +34,47 @@ android_app_import {
 android_app_import {
 	name: "datastatusnotification",
 	owner: "xiaomi",
-	apk: "proprietary/product/app/datastatusnotification/datastatusnotification.apk",
+	apk: "proprietary/system_ext/app/datastatusnotification/datastatusnotification.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
 	name: "dpmserviceapp",
 	owner: "xiaomi",
-	apk: "proprietary/product/priv-app/dpmserviceapp/dpmserviceapp.apk",
+	apk: "proprietary/system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
 	name: "ims",
 	owner: "xiaomi",
-	apk: "proprietary/product/priv-app/ims/ims.apk",
+	apk: "proprietary/system_ext/priv-app/ims/ims.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
 	name: "imssettings",
 	owner: "xiaomi",
-	apk: "proprietary/product/app/imssettings/imssettings.apk",
+	apk: "proprietary/system_ext/app/imssettings/imssettings.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
@@ -102,24 +102,24 @@ android_app_import {
 android_app_import {
 	name: "qcrilmsgtunnel",
 	owner: "xiaomi",
-	apk: "proprietary/product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
+	apk: "proprietary/system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
 	name: "QtiTelephonyService",
 	owner: "xiaomi",
-	apk: "proprietary/product/app/QtiTelephonyService/QtiTelephonyService.apk",
+	apk: "proprietary/system_ext/app/QtiTelephonyService/QtiTelephonyService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
@@ -146,12 +146,12 @@ android_app_import {
 android_app_import {
 	name: "uceShimService",
 	owner: "xiaomi",
-	apk: "proprietary/product/app/uceShimService/uceShimService.apk",
+	apk: "proprietary/system_ext/app/uceShimService/uceShimService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
@@ -180,15 +180,16 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary/lib/libantradio.so"],
+			srcs: ["proprietary/system_ext/lib/libantradio.so"],
 		},
 		android_arm64: {
-			srcs: ["proprietary/lib64/libantradio.so"],
+			srcs: ["proprietary/system_ext/lib64/libantradio.so"],
 		},
 	},
+	check_elf_files: false,
 	compile_multilib: "both",
 	prefer: true,
-	check_elf_files: false,
+	system_ext_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -279,16 +280,16 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary/product/lib/vendor.qti.hardware.fm@1.0.so"],
+			srcs: ["proprietary/system_ext/lib/vendor.qti.hardware.fm@1.0.so"],
 		},
 		android_arm64: {
-			srcs: ["proprietary/product/lib64/vendor.qti.hardware.fm@1.0.so"],
+			srcs: ["proprietary/system_ext/lib64/vendor.qti.hardware.fm@1.0.so"],
 		},
 	},
+	check_elf_files: false,
 	compile_multilib: "both",
 	prefer: true,
-	product_specific: true,
-	check_elf_files: false,
+	system_ext_specific: true,
 }
 
 dex_import {
@@ -301,57 +302,57 @@ dex_import {
 dex_import {
 	name: "com.qti.dpmframework",
 	owner: "xiaomi",
-	jars: ["proprietary/product/framework/com.qti.dpmframework.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/com.qti.dpmframework.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "com.qualcomm.qti.imscmservice-V2.0-java",
 	owner: "xiaomi",
-	jars: ["proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "com.qualcomm.qti.imscmservice-V2.1-java",
 	owner: "xiaomi",
-	jars: ["proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "com.qualcomm.qti.imscmservice-V2.2-java",
 	owner: "xiaomi",
-	jars: ["proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "com.qualcomm.qti.uceservice-V2.0-java",
 	owner: "xiaomi",
-	jars: ["proprietary/product/framework/com.qualcomm.qti.uceservice-V2.0-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.uceservice-V2.0-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "com.qualcomm.qti.uceservice-V2.1-java",
 	owner: "xiaomi",
-	jars: ["proprietary/product/framework/com.qualcomm.qti.uceservice-V2.1-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.uceservice-V2.1-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "dpmapi",
 	owner: "xiaomi",
-	jars: ["proprietary/product/framework/dpmapi.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/dpmapi.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "qcrilhook",
 	owner: "xiaomi",
-	jars: ["proprietary/product/framework/qcrilhook.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/qcrilhook.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
@@ -364,57 +365,57 @@ dex_import {
 dex_import {
 	name: "QtiTelephonyServicelibrary",
 	owner: "xiaomi",
-	jars: ["proprietary/product/framework/QtiTelephonyServicelibrary.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/QtiTelephonyServicelibrary.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "vendor.qti.data.factory-V2.1-java",
 	owner: "xiaomi",
-	jars: ["proprietary/product/framework/vendor.qti.data.factory-V2.1-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/vendor.qti.data.factory-V2.1-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "vendor.qti.hardware.data.latency-V1.0-java",
 	owner: "xiaomi",
-	jars: ["proprietary/product/framework/vendor.qti.hardware.data.latency-V1.0-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.latency-V1.0-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "vendor.qti.ims.callcapability-V1.0-java",
 	owner: "xiaomi",
-	jars: ["proprietary/product/framework/vendor.qti.ims.callcapability-V1.0-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.callcapability-V1.0-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "vendor.qti.ims.callinfo-V1.0-java",
 	owner: "xiaomi",
-	jars: ["proprietary/product/framework/vendor.qti.ims.callinfo-V1.0-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.callinfo-V1.0-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "vendor.qti.ims.factory-V1.0-java",
 	owner: "xiaomi",
-	jars: ["proprietary/product/framework/vendor.qti.ims.factory-V1.0-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.factory-V1.0-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "vendor.qti.ims.rcsconfig-V1.0-java",
 	owner: "xiaomi",
-	jars: ["proprietary/product/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "vendor.qti.ims.rcsconfig-V1.1-java",
 	owner: "xiaomi",
-	jars: ["proprietary/product/framework/vendor.qti.ims.rcsconfig-V1.1-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsconfig-V1.1-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
