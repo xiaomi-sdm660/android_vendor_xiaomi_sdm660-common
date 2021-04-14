@@ -33,8 +33,8 @@ cc_prebuilt_library_shared {
 			srcs: ["proprietary/vendor/lib64/libgpustats.so"],
 		},
 	},
-	check_elf_files: false,
 	compile_multilib: "both",
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -53,8 +53,8 @@ cc_prebuilt_library_shared {
 			srcs: ["proprietary/vendor/lib64/libsdm-disp-vndapis.so"],
 		},
 	},
-	check_elf_files: false,
 	compile_multilib: "both",
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -73,8 +73,8 @@ cc_prebuilt_library_shared {
 			srcs: ["proprietary/vendor/lib64/libthermalclient.so"],
 		},
 	},
-	check_elf_files: false,
 	compile_multilib: "both",
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -93,8 +93,8 @@ cc_prebuilt_library_shared {
 			srcs: ["proprietary/vendor/lib64/libtime_genoff.so"],
 		},
 	},
-	check_elf_files: false,
 	compile_multilib: "both",
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -113,8 +113,8 @@ cc_prebuilt_library_shared {
 			srcs: ["proprietary/system_ext/lib64/libantradio.so"],
 		},
 	},
-	check_elf_files: false,
 	compile_multilib: "both",
+	check_elf_files: false,
 	prefer: true,
 	system_ext_specific: true,
 }
@@ -133,8 +133,8 @@ cc_prebuilt_library_shared {
 			srcs: ["proprietary/system_ext/lib64/vendor.qti.hardware.fm@1.0.so"],
 		},
 	},
-	check_elf_files: false,
 	compile_multilib: "both",
+	check_elf_files: false,
 	prefer: true,
 	system_ext_specific: true,
 }
